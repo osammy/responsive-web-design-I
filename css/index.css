@@ -316,6 +316,7 @@ header div nav a {
 
 .container {
 	width:100%;
+    overflow:hidden;
 }
 
 .header-first-content {
@@ -328,15 +329,23 @@ header div nav {
 	display:flex;
 	flex-direction: column;
     align-items:center;
+    width:100%;
 }
 
 header div nav a {
 	text-align:center;
     border-bottom:1px solid #c7c7c7;
-    width:100%;
-    padding:15px;
+    
+    padding:15px 0px;
 
-    /*padding:0px 70px;*/
+}
+
+.services-image-banner {
+    width:100%;
+}
+
+.services-image-banner img {
+    width:100%;
 }
 
 
@@ -380,6 +389,10 @@ header div nav a {
 
 .body-content {
     padding:10px;
+}
+
+.last-box {
+    margin-top:5px;
 }
 .middle-section div div:last-child img {
     width:100%;
