@@ -373,8 +373,8 @@ header div nav a {
 
 .services-each-section div {
 	width:100%;
-    background: red;
     padding:10px;
+    margin:0px 5px 0px 0px;
 
 }
 .middle-section div div:last-child img {
