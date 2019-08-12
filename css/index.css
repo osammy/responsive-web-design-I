@@ -215,7 +215,7 @@ footer {
 }
 
 /* media queries */
-@media screen and (max-width: 800px) and (min-width: 500px) {
+@media screen and (max-width: 800px)  {
 
 .container {
 	width:100%;
