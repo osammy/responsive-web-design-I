@@ -368,7 +368,7 @@ header div nav a {
     width:100%;
 	display:flex;
 	flex-direction: column;
-    /*align-items: space-between;*/
+    align-content: space-around;
 }
 
 .services-each-section div {
@@ -376,6 +376,10 @@ header div nav a {
     padding:10px;
     margin:0px 5px 0px 0px;
 
+}
+
+.body-content {
+    padding:10px;
 }
 .middle-section div div:last-child img {
     width:100%;
