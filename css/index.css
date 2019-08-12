@@ -223,6 +223,8 @@ footer {
 	margin:0px;
 }
 
+
+
 .header-first-content {
 	display:flex;
 	flex-direction: column-reverse;
@@ -278,6 +280,26 @@ header div nav a {
 	padding:10px 0px;
     width:100%;
 }
+
+.services-each-section {
+	display:flex;
+	flex-direction: row;
+}
+
+.services-each-section div {
+	width:48%;
+    /*background: red;*/
+    padding:10px;
+
+}
+
+/*.body-section {
+    width:70%;
+    margin:0 auto;
+    border:1px solid blue;
+    background: red;
+
+}*/
 
 .middle-section div div:last-child img {
     width:100%;
@@ -342,7 +364,19 @@ header div nav a {
 	padding:10px 0px;
     width:100%;
 }
+.services-each-section {
+    width:100%;
+	display:flex;
+	flex-direction: column;
+    /*align-items: space-between;*/
+}
 
+.services-each-section div {
+	width:100%;
+    background: red;
+    padding:10px;
+
+}
 .middle-section div div:last-child img {
     width:100%;
 	/*padding:0px 10px;*/
