@@ -1,3 +1,408 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Global styles, affects all html pages */
+
+.container {
+	width:900px;
+	margin: 0 auto;
+    /*background:green;*/
+}
+
+.header-first-content {
+	display:flex;
+	justify-content: space-between;
+    padding:20px 0px;
+}
+
+
+header div nav {
+	display:flex;
+	justify-content: space-between;
+	width:600px;;
+}
+
+header div nav a{
+	text-decoration:none;
+	color:#c7c7c7;
+}
+
+header div nav a{
+	text-decoration:none;
+	color:#c7c7c7;
+}
+
+
+/* end global style */
+
+.each-section  {
+	display:flex;
+	justify-content: space-between;
+}
+
+.each-box {
+	background:#f4f3f4;
+	width:49%;
+	padding:20px;
+}
+
+.learn-btn {
+	color:#000;
+	background:#fff;
+	border:1px solid #000;
+	border-radius:5px;
+	padding:10px 30px;
+	/*box-shadow: 0px 1px #aaa;*/
+
+}
+
+.each-section ul  {
+	list-style-type: square;
+	margin-left:20px;
+	padding:20px 0px;
+}
+
+.each-section ul li {
+	padding:5px 0px;
+}
+
+.last-box {
+	height:235px;
+}
+
+.last-box img {
+	height:235px;
+}
+
+footer {
+	text-align:center;
+}
+
+/* product.html specific css */
+
+.each-product-box {
+	/*background:#f4f3f4;*/
+	width:49%;
+	padding:20px;	
+}
+
+.accepted-payments {
+	display:flex;
+	justify-content: space-around;
+}
+
+
+.product_header {
+	text-align:center;
+	font-size:3em;
+	line-height:1.7em;
+	word-spacing: 2em;
+}
+
+
+/*index.html specific css */
+#header-section {
+	display:flex;
+	justify-content: space-between;
+}
+
+#header-section div {
+	width:49%
+}
+
+#header-section div h1 {
+	font-size:3em
+}
+#header-section div h1 p {
+	text-align:center;
+}
+
+.get-started {
+	text-align:center;
+	border:1px solid black;
+	padding:5px 5px;
+	width:110px;
+	margin:0 auto;
+}
+
+#header-section div img {
+	width:250px;
+    
+}
+
+.middle-section {
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	padding:50px 0px;
+}
+
+.middle-img-div {
+    width:100%;
+}
+
+.middle-img-div img {
+    width:100%;
+}
+
+.three-on-row {
+	width:30%;
+}
+
+/* media queries */
+@media screen and (max-width: 800px)  {
+
+.container {
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+
+
+.header-first-content {
+	display:flex;
+	flex-direction: column-reverse;
+	align-items:center;
+}
+
+header div nav {
+	display:flex;
+	flex-direction: row;
+    align-items:center;
+	
+}
+
+header div nav a {
+	text-align:center;
+    border-bottom:1px solid #c7c7c7;
+    width:100%;
+    padding:15px;
+	border:none;
+}
+
+
+
+#header-section  {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    /*border:1px solid red;*/
+}
+
+#header-section > div:first-child {
+	/*text-align:center;*/
+    display:block;
+    margin:0 auto;
+
+}
+
+#header-section > div:last-child {
+	display:none;
+
+}
+
+.middle-section {
+    margin:10px;
+}
+
+.each-section  {
+	display:flex;
+	flex-direction: row;
+}
+
+.each-section div {
+	padding:10px 0px;
+    width:100%;
+}
+
+.services-each-section {
+	display:flex;
+	flex-direction: row;
+}
+
+.services-each-section div {
+	width:48%;
+    /*background: red;*/
+    padding:10px;
+
+}
+
+/*.body-section {
+    width:70%;
+    margin:0 auto;
+    border:1px solid blue;
+    background: red;
+
+}*/
+
+.middle-section div div:last-child img {
+    width:100%;
+}
+
+.bottom-section, footer {
+    padding:0px 10px;
+}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+.container {
+	width:100%;
+    overflow:hidden;
+}
+
+.header-first-content {
+	display:flex;
+	flex-direction: column-reverse;
+	align-items:center;
+}
+
+header div nav {
+	display:flex;
+	flex-direction: column;
+    align-items:center;
+    width:100%;
+}
+
+header div nav a {
+	text-align:center;
+    border-bottom:1px solid #c7c7c7;
+    
+    padding:15px 0px;
+
+}
+
+.services-image-banner {
+    width:100%;
+}
+
+.services-image-banner img {
+    width:100%;
+}
+
+
+
+#header-section  {
+    display:flex;
+    justify-content:center;
+}
+
+#header-section > div:last-child {
+	display:none;
+
+}
+
+.middle-section {
+    margin:10px;
+}
+
+.each-section  {
+	display:flex;
+	flex-direction: column;
+}
+
+.each-section div {
+	padding:10px 0px;
+    width:100%;
+}
+.services-each-section {
+    width:100%;
+	display:flex;
+	flex-direction: column;
+    align-content: space-around;
+}
+
+.services-each-section div {
+	width:100%;
+    padding:10px;
+    margin:0px 5px 0px 0px;
+
+}
+
+.body-content {
+    padding:10px;
+}
+
+.last-box {
+    margin-top:5px;
+}
+.middle-section div div:last-child img {
+    width:100%;
+	/*padding:0px 10px;*/
+    /*width:20%;*/
+}
+
+.bottom-section, footer {
+    padding:0px 10px;
+}
+
+}
 
